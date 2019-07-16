@@ -47,15 +47,6 @@
     "fswConfigurationFunction": {
       "type": "string"
     },
-    "autoPatchingEnable": {
-      "type": "bool"
-    },
-    "autoPatchingDay": {
-      "type": "string"
-    },
-    "autoPatchingStartHour": {
-      "type": "string"
-    },
     "numberOfDisks": {
       "type": "string"
     },
@@ -127,13 +118,6 @@
           "AutoTelemetrySettings": {
             "Region": "[parameters('location')]"
           },
-          "AutoPatchingSettings": {
-            "PatchCategory": "WindowsMandatoryUpdates",
-            "Enable": "[parameters('autoPatchingEnable')]",
-            "DayOfWeek": "[parameters('autoPatchingDay')]",
-            "MaintenanceWindowStartingHour": "[int(parameters('autoPatchingStartHour'))]",
-            "MaintenanceWindowDuration": "60"
-          },
           "AutoBackupSettings": {
             "Enable": false,
             "RetentionPeriod": "30",
@@ -155,13 +139,6 @@
         "settings": {
           "AutoTelemetrySettings": {
             "Region": "[parameters('location')]"
-          },
-          "AutoPatchingSettings": {
-            "PatchCategory": "WindowsMandatoryUpdates",
-            "Enable": "[parameters('autoPatchingEnable')]",
-            "DayOfWeek": "[variables(string(variables(parameters('autoPatchingDay'))))]",
-            "MaintenanceWindowStartingHour": "[mod(add(int(parameters('autoPatchingStartHour')),2),24)]",
-            "MaintenanceWindowDuration": "60"
           },
           "AutoBackupSettings": {
             "Enable": false,
