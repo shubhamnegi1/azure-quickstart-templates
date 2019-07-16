@@ -3,10 +3,10 @@
    "contentVersion":"1.0.0.0",
    "parameters":{  
       "adminUsername":{  
-         "value":"alwaysonadmin"
+         "value":"azureAdmin"
       },
       "adminPassword":{  
-         "value":"GEN-PASSWORD"
+         "value":"Password@123"
       },
       "sqlServerServiceAccountUserName":{  
          "value":"sqlservice"
@@ -46,12 +46,6 @@
       },
       "sqlSubnet":{  
          "value":"10.0.1.0/26"
-      },
-      "autoPatchingDay":{  
-         "value":"Sunday"
-      },
-      "autoPatchingStartHour":{  
-         "value":"2"
       },
       "sqlAOAGName":{  
          "value":"alwayson-ag"
