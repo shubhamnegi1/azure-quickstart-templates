@@ -54,7 +54,7 @@
          "value":"alwayson-ag-listener"
       },
       "sqlServerVersion":{  
-         "value":"SQL2016SP2-WS2016R2"
+         "value":"SQL2016SP1-WS2016"
       },
       "numberOfSqlVMDisks":{  
          "value":"2"
